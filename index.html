@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodExpress - Order Food Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">BhukhadExpress</span>
+            </div>
+            <div class="search-bar">
+                <div class="location-input">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Enter delivery location">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for restaurants or dishes">
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="login.html" class="nav-link">Log In</a>
+                <a href="signup.html" class="nav-link">Sign Up</a>
+                <a href="cart.html" class="nav-link cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bhukhadon - Feed your Hunger</h1>
+            <div class="hero-search">
+                <div class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Enter your delivery location">
+                    <button>Find Food</button>
+                </div>
+            </div>
+            <p>Popular cities in India: <span>Bangalore</span>, <span>Delhi</span>, <span>Mumbai</span>, <span>Hyderabad</span>, <span>Pune</span>, <span>Chennai</span></p>
+        </div>
+    </section>
+
+    <!-- Food Categories -->
+    <section class="categories">
+        <h2>What's on your mind?</h2>
+        <div class="category-container">
+            <div class="category-card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png" alt="Pizza">
+                <p>Pizza</p>
+            </div>
+            <div class="category-card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/52eb9796bb9bcf0eba64c643349e97211634401116.png" alt="Thali">
+                <p>Thali</p>
+            </div>
+            <div class="category-card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/019409fe8f838312214d9211be010ef31678798444.jpeg" alt="Veg Thali">
+                <p>Veg Thali</p>
+            </div>
+            <div class="category-card">
+                <img src="https://b.zmtcdn.com/data/dish_images/d19a31d42d5913ff129cafd7cec772f81639737697.png" alt="Chicken">
+                <p>Chicken briyani</p>
+            </div>
+            <div class="category-card">
+                <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="leg Piece">
+                <p>Leg Piece</p>
+            </div>
+            <div class="category-card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/5dbdb72a48cf3192830232f6853735301632716604.png" alt="momos">
+                <p>Momos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Listings -->
+    <section class="restaurants">
+        <div class="section-header">
+            <h2>Top restaurants near you</h2>
+            <a href="#" class="see-all">See all</a>
+        </div>
+       <div class="restaurant-container">
+    <!-- Restaurant cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections">
+        <div class="section-header">
+            <h2>Collections</h2>
+            <a href="#" class="see-all">See all</a>
+        </div>
+        <div class="collection-container">
+            <div class="collection-card">
+                <img src="https://b.zmtcdn.com/data/collections/efa072a5b3aae3ab5ea35072a5a4fb3a_1589426788.jpg" alt="Trending">
+                <div class="collection-info">
+                    <h3>Trending This Week</h3>
+                    <p>30 Places <i class="fas fa-caret-right"></i></p>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="https://b.zmtcdn.com/data/collections/a1e31eb92bb9951aaf1750d88497adb6_1589426719.jpg" alt="Best">
+                <div class="collection-info">
+                    <h3>Best of Bengaluru</h3>
+                    <p>120 Places <i class="fas fa-caret-right"></i></p>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="https://b.zmtcdn.com/data/collections/2deab8e9f06ff125e80f5cc09f11e4d7_1589426525.jpg" alt="New">
+                <div class="collection-info">
+                    <h3>Newly Opened</h3>
+                    <p>15 Places <i class="fas fa-caret-right"></i></p>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="https://b.zmtcdn.com/data/collections/83fed288b6dff6afe5028e621d9f37dc_1589420952.jpg" alt="Great">
+                <div class="collection-info">
+                    <h3>Great Cafés</h3>
+                    <p>22 Places <i class="fas fa-caret-right"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download -->
+    <section class="app-download">
+        <div class="app-container">
+            <div class="app-content">
+                <h2>Get the BhukhadExpress App</h2>
+                <p>We will send you a link, open it on your phone to download the app</p>
+                <div class="app-options">
+                    <div class="radio-option">
+                        <input type="radio" id="email" name="app-download" checked>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="phone" name="app-download">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+                <div class="app-input">
+                    <input type="text" placeholder="Email">
+                    <button>Share App Link</button>
+                </div>
+                <div class="app-stores">
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="App Store">
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Play Store">
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="App Screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <span class="logo-text">BhukhadExpress</span>
+                <div class="country-selector">
+                    <img src="https://b.zmtcdn.com/images/flags_z10/in.png" alt="India">
+                    <span>India</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="language-selector">
+                    <span>English</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="link-column">
+                    <h3>Contact</h3>
+                    <a href="#">Help & Support</a>
+                    <a href="#">Partner with us</a>
+                    <a href="#">Ride with us</a>
+                </div>
+                <div class="link-column">
+                    <h3>Legal</h3>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="link-column social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="app-badges">
+                        <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="App Store">
+                        <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="Play Store">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. © 2023 FoodExpress™ Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
